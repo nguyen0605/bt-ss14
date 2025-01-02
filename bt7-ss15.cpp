@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 int main(){
-	char str[]="12@3 a%lo 12$#3";
+	char str[]="Hello my gmail is test123@gmail.com";
 	int letter_cnt=0, digit_cnt=0, special_cnt=0;
 	for(int i=0;i<strlen(str);i++){
 		if((str[i]>='a' && str[i]<='z') || (str[i]>='A' && str[i]<='Z')){
 			letter_cnt++;
 		}else if(str[i]>='0' && str[i]<='9'){
 			digit_cnt++;
-		}else if(str[i]!=' '){
+		}else{
 			special_cnt++;
 		}
 	}
